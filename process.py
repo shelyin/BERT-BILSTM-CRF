@@ -224,7 +224,7 @@ if __name__ == "__main__":
     processDgreData.get_ner_data()
 
     processDuieData = ProcessDuieData()
-    processDuieData.get_ents()
+    # processDuieData.get_ents()
     processDuieData.get_ner_data(processDuieData.train_file,
                                 os.path.join(processDuieData.data_path, "ner_data/train.txt"))
     processDuieData.get_ner_data(processDuieData.dev_file, os.path.join(processDuieData.data_path, "ner_data/dev.txt"))
